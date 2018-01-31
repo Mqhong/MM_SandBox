@@ -17,11 +17,27 @@ class ViewController: UIViewController {
 //        let _ = MM_AirSandBox()
 //        let _ = FuckVC()
         let _ = MMFuck(width: 1, height: 2)
-        let _ = FFMM(heigt: <#T##Int#>, width: <#T##Int#>)
+//        let _ = FFMM(heigt: <#T##Int#>, width: <#T##Int#>)
+        
+        tapGestureDemo()
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
+    }
+    
+    /**点击手势*/
+    func tapGestureDemo() {
+        //建立手势识别器
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(gestureFFF))
+        //附加识别器到视图
+//        self.view.addGestureRecognizer(gesture)
+        UIApplication.shared.keyWindow?.addGestureRecognizer(gesture)
+    }
+ 
+    @objc func gestureFFF() -> Void {
+        print("?????")
     }
 }
 
