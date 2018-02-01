@@ -29,7 +29,7 @@ class MM_FileItem{
     
     init(Fuck:String){
         super.init()
-        print("OKOKOKOKO")
+        print("OKOKOKOKO~~~")
     }
     
     func enableSwipe() -> Void {
