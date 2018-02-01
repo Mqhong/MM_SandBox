@@ -25,7 +25,11 @@ class MM_FileItem{
     //MARK:- 单利
     static let sharedInstance = MM_AirSandBox()
     private override init(){}//重写init方法，因为继承自其它类，init方法也要继承其他类
-    //TODO: 测试TODO
+    let rootPath:String = NSHomeDirectory()
+    
+    func load(targetPath:String) -> Void {
+        
+    }
     
     init(Fuck:String){
         super.init()
