@@ -20,17 +20,13 @@ class MM_FileItem{
     var path = ""
     var type:MM_FileItemType?
 }
-@objc class MM_AirSandBox: NSObject {
+class MM_AirSandBox: NSObject {
     //MARK:- DDD
     //MARK:- 单利
     static let sharedInstance = MM_AirSandBox()
+    var window:UIWindow = UIWindow()
+    var ctrl:MM_AirSandBoxVC = MM_AirSandBoxVC()
     private override init(){}//重写init方法，因为继承自其它类，init方法也要继承其他类
-    let rootPath:String = NSHomeDirectory()
-    
-    func load(targetPath:String) -> Void {
-        
-    }
-    
     init(Fuck:String){
         super.init()
         print("OKOKOKOKO~~~")
@@ -49,5 +45,16 @@ class MM_FileItem{
     
     func showSandboxBrowser() -> Void {
         print("这里是右边滑动调用了这个玩意")
+        var keyFrame = UIScreen.main.bounds
+        keyFrame.origin.y = keyFrame.origin.y + 64
+        keyFrame.size.height = keyFrame.size.height - 64
+        let rect = keyFrame.insetBy(dx: 20, dy: 20)
+        self.window.frame = rect
+        self.window.backgroundColor = UIColor.white
+        self.window.layer.borderColor = UIColor(white: 0.2, alpha: 1.0).cgColor
+        self.window.layer.borderWidth = 2.0
+        self.window.windowLevel = UIWindowLevelStatusBar
+        self.window.rootViewController = self.ctrl
+        self.window.isHidden = false
     }
 }
