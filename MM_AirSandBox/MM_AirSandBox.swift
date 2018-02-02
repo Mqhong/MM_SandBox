@@ -29,7 +29,6 @@ class MM_AirSandBox: NSObject {
     private override init(){}//重写init方法，因为继承自其它类，init方法也要继承其他类
     init(Fuck:String){
         super.init()
-        print("OKOKOKOKO~~~")
     }
     
     func enableSwipe() -> Void {

@@ -124,12 +124,13 @@ class MM_AirSandBoxVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
             file.path = targetPath
             files.append(file)
         }
-        
-        let paths:Array<String> = try! fm.contentsOfDirectory(atPath: targetPath)
+        var paths:Array<String> = Array()
+        if let fff = try? fm.contentsOfDirectory(atPath: targetPath) {
+            paths = fff
+        }
         for path in paths {
-            print("~~~~~~~!!!!!!!!!???????????")
             if (path as NSString).lastPathComponent.hasPrefix("."){
-                print("~~~~~~~!!!!!!!!!???????????")
+                print(".com.apple.mobile_container_manager.metadata.plist\t\(path)")//过滤掉这个路径
                 continue
             }
             var isDir:ObjCBool = false
@@ -154,7 +155,6 @@ class MM_AirSandBoxVC: UIViewController,UITableViewDelegate,UITableViewDataSourc
     func sharePath(path:String) -> Void {
         print("这里实现文件分享功能")
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
