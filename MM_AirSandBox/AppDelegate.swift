@@ -16,11 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        #if DEBUG
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                print("???")
+                MM_AirSandBox.sharedInstance.enableSwipe()
+            }
+        #endif
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            print("???")
-            MM_AirSandBox.sharedInstance.enableSwipe()
-        }
+        
+
         return true
     }
 
