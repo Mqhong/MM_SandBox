@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            print("???")
             MM_AirSandBox.sharedInstance.enableSwipe()
         }
         return true

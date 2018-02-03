@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3AA6222024344400D05C66 /* MM_AirSandBoxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3AA6212024344400D05C66 /* MM_AirSandBoxVC.swift */; };
 		8DFA46FB201C536F005CB7BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA46FA201C536F005CB7BE /* AppDelegate.swift */; };
 		8DFA46FD201C536F005CB7BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA46FC201C536F005CB7BE /* ViewController.swift */; };
 		8DFA4700201C536F005CB7BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFA46FE201C536F005CB7BE /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D3AA6212024344400D05C66 /* MM_AirSandBoxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MM_AirSandBoxVC.swift; sourceTree = "<group>"; };
 		8DFA46F7201C536F005CB7BE /* MM_AirSandBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MM_AirSandBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFA46FA201C536F005CB7BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DFA46FC201C536F005CB7BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				8DFA46FA201C536F005CB7BE /* AppDelegate.swift */,
 				8DFA472A201C635A005CB7BE /* FuckVC.swift */,
 				8DFA4728201C5392005CB7BE /* MM_AirSandBox.swift */,
+				8D3AA6212024344400D05C66 /* MM_AirSandBoxVC.swift */,
 				8DFA46FC201C536F005CB7BE /* ViewController.swift */,
 				8DFA46FE201C536F005CB7BE /* Main.storyboard */,
 				8DFA4701201C536F005CB7BE /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				8DFA472B201C635A005CB7BE /* FuckVC.swift in Sources */,
 				8DFA46FD201C536F005CB7BE /* ViewController.swift in Sources */,
 				8DFA46FB201C536F005CB7BE /* AppDelegate.swift in Sources */,
+				8D3AA6222024344400D05C66 /* MM_AirSandBoxVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SW9G3AY5FL;
 				INFOPLIST_FILE = MM_AirSandBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tapinfinity.MM-AirSandBox";
@@ -449,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SW9G3AY5FL;
 				INFOPLIST_FILE = MM_AirSandBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tapinfinity.MM-AirSandBox";
