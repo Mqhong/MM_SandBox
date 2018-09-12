@@ -16,7 +16,6 @@
 		8DFA4710201C536F005CB7BE /* MM_AirSandBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA470F201C536F005CB7BE /* MM_AirSandBoxTests.swift */; };
 		8DFA471B201C536F005CB7BE /* MM_AirSandBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA471A201C536F005CB7BE /* MM_AirSandBoxUITests.swift */; };
 		8DFA4729201C5392005CB7BE /* MM_AirSandBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA4728201C5392005CB7BE /* MM_AirSandBox.swift */; };
-		8DFA472B201C635A005CB7BE /* FuckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA472A201C635A005CB7BE /* FuckVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		8DFA471A201C536F005CB7BE /* MM_AirSandBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MM_AirSandBoxUITests.swift; sourceTree = "<group>"; };
 		8DFA471C201C536F005CB7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DFA4728201C5392005CB7BE /* MM_AirSandBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MM_AirSandBox.swift; sourceTree = "<group>"; };
-		8DFA472A201C635A005CB7BE /* FuckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				8DFA46FA201C536F005CB7BE /* AppDelegate.swift */,
-				8DFA472A201C635A005CB7BE /* FuckVC.swift */,
 				8DFA4728201C5392005CB7BE /* MM_AirSandBox.swift */,
 				8D3AA6212024344400D05C66 /* MM_AirSandBoxVC.swift */,
 				8DFA46FC201C536F005CB7BE /* ViewController.swift */,
@@ -269,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DFA4729201C5392005CB7BE /* MM_AirSandBox.swift in Sources */,
-				8DFA472B201C635A005CB7BE /* FuckVC.swift in Sources */,
 				8DFA46FD201C536F005CB7BE /* ViewController.swift in Sources */,
 				8DFA46FB201C536F005CB7BE /* AppDelegate.swift in Sources */,
 				8D3AA6222024344400D05C66 /* MM_AirSandBoxVC.swift in Sources */,

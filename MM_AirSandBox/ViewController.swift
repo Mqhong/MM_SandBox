@@ -9,35 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let lbl = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
         print("fuck")
-        let _ = MM_AirSandBox.sharedInstance
-//        let _ = MM_AirSandBox()
-//        let _ = FuckVC()
-        let _ = MMFuck(width: 1, height: 2)
-//        let _ = FFMM(heigt: <#T##Int#>, width: <#T##Int#>)
-        
-        tapGestureDemo()
-        
+        lbl.text = "右划打开文件系统"
+        lbl.textColor = UIColor.red
+        lbl.font = UIFont.boldSystemFont(ofSize: 20)
+        lbl.textAlignment = .center
+        self.view.addSubview(lbl)
+    }
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        let lblframe = self.view.frame.insetBy(dx: 20, dy: 20)
+        lbl.frame = lblframe
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-    }
-    
-    /**点击手势*/
-    func tapGestureDemo() {
-        //建立手势识别器
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(gestureFFF))
-        //附加识别器到视图
-//        self.view.addGestureRecognizer(gesture)
-        UIApplication.shared.keyWindow?.addGestureRecognizer(gesture)
-    }
- 
-    @objc func gestureFFF() -> Void {
-        print("?????")
     }
 }
 
